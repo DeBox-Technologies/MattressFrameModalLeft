@@ -44,15 +44,13 @@
       border: none;
       position: fixed;
       bottom: 1rem;
-      left: 50%;  // Change this to 50%
-      top: 50%;
-      transform: translate(-50%, -50%);  // Adjust the transform property to keep the modal on the left
+      left: 1rem;  // Change this to 1rem
       background-color: #18181b;
-      border-radius: 50%;
+      border-radius: 20%;  // Change this to 20%
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       max-width: 90%;
-      width: 80%;
-      height: 85%;
+      width: 30vw;  // Change this to 30vw
+      height: 92%;  // Change this to 92%
       max-height: 900px;
     }
     iframe {
@@ -61,19 +59,18 @@
     }
     @media (max-width: 768px) {
       .mattressai-modal-container {
-        position: fixed !important;
-        bottom: 0 !important; /* Anchor to the bottom */
-        left: 0 !important; /* Stretch to the left edge */
-        right: 0 !important; /* Stretch to the right edge */
-        top: auto !important; /* Override any top positioning */
-        height: 90vh; /* 90% of the viewport height */
-        width: 100vw; /* Full viewport width */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-right: 5px;
+        padding-left: 5px;
         min-width: 100vw;
-        margin: 0 !important;
-        padding: 0 !important;
-        border-radius: 0 !important;
-        box-shadow: none !important; /* Optional: remove shadow if not needed */
-        transform: none !important; /* Remove transform */
+        max-height: calc(100% - 120px);
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06);
       }
     }
   `;
