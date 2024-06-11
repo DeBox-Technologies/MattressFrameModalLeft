@@ -44,9 +44,9 @@
       border: none;
       position: fixed;
       bottom: 1rem;
-      left: 1rem;  // Keep the modal on the left
+      left: 50%;  // Change this to 50%
       top: 50%;
-      transform: translate(0, -50%);  // Adjust the transform property to keep the modal on the left
+      transform: translate(-50%, -50%);  // Adjust the transform property to keep the modal on the left
       background-color: #18181b;
       border-radius: 50%;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
