@@ -77,18 +77,20 @@
 
   var html = `
     <button onclick="openModal()" class="mattressai-button-style">
-    <img
-      src="https://res.cloudinary.com/djr22sgp3/image/upload/v1689685357/mattress_ai_logo_circle_2_aw3f3q.png"
-      width="40"
-      alt="Open Modal"
-    />
-    <p>Find Your Mattress</p>
-  </button>
-  <div id="modal" class="mattressai-modal-background" style="display: none; width: 100%; height: 100%;" onclick="closeModal(event)">
-    <div class="mattressai-modal-container" onclick="event.stopPropagation()">
-      <iframe src="${iframeSrc}" style="border-radius: 8px; width: 100%; height: 100%; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);"></iframe>
+      <img
+        class="mattressai-button-image"
+        src="https://res.cloudinary.com/djr22sgp3/image/upload/v1689685357/mattress_ai_logo_circle_2_aw3f3q.png"
+        width="40"
+        alt="Open Modal"
+      />
+      <span>Find Your Mattress</span>
+    </button>
+
+    <div id="modal" class="mattressai-modal-background" style="display: none; width: 100%; height: 100%;" onclick="closeModal(event)">
+      <div class="mattressai-modal-container" onclick="event.stopPropagation()">
+        <iframe src="${iframeSrc}" style="border-radius: 8px; width: 100%; height: 100%; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);"></iframe>
+      </div>
     </div>
-  </div>
   `;
   document.body.insertAdjacentHTML("beforeend", html);
 
