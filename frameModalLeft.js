@@ -84,7 +84,7 @@
         width="40"
         alt="Open Modal"
       />
-      <span>Find Your Mattress</span>
+      <p>Find Your Mattress</p>
     </button>
 
     <div id="modal" class="mattressai-modal-background" style="display: none; width: 100%; height: 100%;" onclick="closeModal(event)">
