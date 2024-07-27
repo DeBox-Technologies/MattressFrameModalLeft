@@ -26,6 +26,8 @@
     }
     .mattressai-button-image {
       margin-right: 10px;
+      width: 16px;
+      height: 16px;
     }
     .mattressai-modal-background {
       position: fixed;
