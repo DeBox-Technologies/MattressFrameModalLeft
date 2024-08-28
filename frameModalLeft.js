@@ -13,7 +13,7 @@
       left: 20px;
       bottom: 20px;
       border-radius: 20px;
-      z-index: 50;
+      z-index: 2147483647; // Increased z-index to maximum value
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       cursor: pointer;
       color: white;
@@ -36,7 +36,7 @@
       bottom: 0;
       left: 0;
       background-color: rgba(0, 0, 0, 0.5);
-      z-index: 50;
+      z-index: 2147483646; // Increased z-index to one less than the maximum
     }
     .mattressai-modal-container {
       border: none;
@@ -50,6 +50,7 @@
       width: 30vw;
       height: 92%;
       max-height: 900px;
+      z-index: 2147483647; // Increased z-index to maximum value
     }
     iframe {
       border: none;
