@@ -57,6 +57,7 @@
     }
     @media (max-width: 768px) {
       .mattressai-modal-container {
+        z-index: 2147483647; // Increased z-index to maximum value
         position: fixed;
         bottom: 0;
         left: 0;
